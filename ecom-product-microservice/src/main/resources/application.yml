@@ -1,0 +1,33 @@
+debug: ${DEBUG_LOG:@debug.properties@}
+trace: ${TRACE_LOG:@trace.properties@}
+logging:
+   level:
+      org.springframework.data.mongodb: INFO
+      org.springframework.data.mongodb.core.MongoTemplate: INFO
+      org.springframework.test.context.support: INFO
+      org.springframework.context.annotation: INFO
+      org.springframework.test: INFO
+      s7.Application: WARN
+server:
+   compression:
+      enabled: true
+      min-response-size: 1
+   port: ${SERVER_PORT:@port@}
+   undertow:
+      accesslog:
+         dir: logs
+         enabled: false
+         pattern: '%t %a "%r" %s (%D ms)'
+spring:
+   profiles:
+      active: dev
+   application:
+      name: '@projet.artifactId@'
+   data:
+      mongodb:
+         authentication-database: "admin"
+         database: "test"
+         host: "localhost"
+         password: "112358"
+         username: "root"
+         port: 27017

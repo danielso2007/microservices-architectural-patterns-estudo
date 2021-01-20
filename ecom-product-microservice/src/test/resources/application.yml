@@ -1,0 +1,13 @@
+spring:
+   profiles:
+      active: test
+   data:
+      mongodb:
+#         uri: "mongodb://root:112358@localhost:27017/test?authSource=admin&keepAlive=true&poolSize=30&autoReconnect=true&socketTimeoutMS=1000&connectTimeoutMS=1000"
+         authentication-database: "admin"
+         database: "test"
+         host: "localhost"
+         password: "112358"
+         username: "root"
+         port: 27017
+         
