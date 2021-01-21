@@ -14,7 +14,9 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.MockitoAnnotations;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-@ExtendWith(SpringExtension.class)
+import com.acme.ecom.model.Product;
+import com.acme.ecom.model.ProductCategory;
+
 class ProductTest {
 
 	private static final String TESTUPDATER = "testupdater";

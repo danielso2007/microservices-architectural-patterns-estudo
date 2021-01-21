@@ -25,11 +25,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import com.acme.ecom.hateoas.model.ProductModel;
+import com.acme.ecom.model.Product;
 import com.acme.ecom.product.commons.lang.ProductConflictException;
 import com.acme.ecom.product.commons.lang.ProductNotFoundException;
 import com.acme.ecom.product.hateoas.assembers.ProductModelAssembler;
-import com.acme.ecom.product.hateoas.model.ProductModel;
-import com.acme.ecom.product.model.Product;
 import com.acme.ecom.product.repository.ProductRepository;
 
 @RestController

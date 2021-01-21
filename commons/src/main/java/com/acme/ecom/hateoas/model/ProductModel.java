@@ -1,4 +1,4 @@
-package com.acme.ecom.product.hateoas.model;
+package com.acme.ecom.hateoas.model;
 
 import java.util.Date;
 

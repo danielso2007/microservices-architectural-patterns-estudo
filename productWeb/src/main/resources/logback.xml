@@ -57,7 +57,7 @@
 		<appender-ref ref="STDOUT" />
 		<appender-ref ref="FILE" />
 	</logger>
-	<logger name="br.com.virtuallibrary" level="DEBUG"
+	<logger name="com.acme.ecom.product" level="DEBUG"
 		additivity="false">
 		<appender-ref ref="STDOUT" />
 		<appender-ref ref="FILE" />

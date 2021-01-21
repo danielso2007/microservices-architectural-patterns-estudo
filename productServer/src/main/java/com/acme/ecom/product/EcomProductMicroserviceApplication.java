@@ -9,8 +9,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.acme.ecom.product.model.Product;
-import com.acme.ecom.product.model.ProductCategory;
+import com.acme.ecom.model.Product;
+import com.acme.ecom.model.ProductCategory;
 import com.acme.ecom.product.repository.ProductCategoryRepository;
 import com.acme.ecom.product.repository.ProductRepository;
 

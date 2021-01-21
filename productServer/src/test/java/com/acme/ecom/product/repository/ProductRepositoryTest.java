@@ -12,7 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.acme.ecom.product.model.Product;
+import com.acme.ecom.model.Product;
 
 @ActiveProfiles("test")
 @ExtendWith(SpringExtension.class)

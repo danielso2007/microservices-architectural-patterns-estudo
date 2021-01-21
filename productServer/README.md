@@ -1,6 +1,6 @@
 # Ecom-Product-Microservice
 
-Projeti usando o mongodb.
+Projeto usando o mongodb.
 
 # MongoDB
 

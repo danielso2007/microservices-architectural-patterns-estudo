@@ -1,10 +1,10 @@
-package com.acme.ecom.product.model;
+package com.acme.ecom.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.validation.annotation.Validated;
 
-import com.acme.ecom.product.commons.model.AuditModel;
+import com.acme.ecom.commons.model.AuditModel;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;

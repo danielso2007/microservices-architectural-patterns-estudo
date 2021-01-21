@@ -4,9 +4,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>ecom-product-server</artifactId>
-	<name>ecom-product-server</name>
-	<description>Product Server</description>
+	<artifactId>ecom-product-web</artifactId>
+	<name>ecom-product-web</name>
+	<description>Product Web</description>
 	<packaging>jar</packaging>
 
 	<parent>
@@ -17,7 +17,7 @@
 	</parent>
 
 	<properties>
-		<port>8180</port>
+		<port>8181</port>
 	</properties>
 
 	<dependencies>
@@ -25,11 +25,6 @@
 			<groupId>com.acme.ecom.commons</groupId>
 			<artifactId>ecom-commons</artifactId>
 			<version>${project.version}</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
 
 		<dependency>
@@ -55,9 +50,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-rest-hal-browser</artifactId>
-			<version>3.3.6.RELEASE</version>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 
 		<dependency>

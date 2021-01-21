@@ -1,4 +1,4 @@
-package com.acme.ecom.product.commons.model;
+package com.acme.ecom.commons.model;
 
 import java.util.Date;
 

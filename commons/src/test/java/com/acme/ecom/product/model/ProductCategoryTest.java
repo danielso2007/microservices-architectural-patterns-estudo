@@ -11,10 +11,13 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.engine.execution.JupiterEngineExecutionContext;
 import org.mockito.MockitoAnnotations;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-@ExtendWith(SpringExtension.class)
+import com.acme.ecom.model.Product;
+import com.acme.ecom.model.ProductCategory;
+
 class ProductCategoryTest {
 
 	private static final String CATEGORIA_TITLE = "Categoria Title";

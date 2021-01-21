@@ -12,7 +12,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.acme.ecom.product.model.ProductCategory;
+import com.acme.ecom.model.ProductCategory;
+
 
 @ActiveProfiles("test")
 @ExtendWith(SpringExtension.class)

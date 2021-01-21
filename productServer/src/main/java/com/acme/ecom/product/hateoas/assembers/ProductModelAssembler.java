@@ -6,9 +6,9 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
 import org.springframework.stereotype.Component;
 
+import com.acme.ecom.hateoas.model.ProductModel;
+import com.acme.ecom.model.Product;
 import com.acme.ecom.product.controller.ProductRestController;
-import com.acme.ecom.product.hateoas.model.ProductModel;
-import com.acme.ecom.product.model.Product;
 
 @Component
 public class ProductModelAssembler extends RepresentationModelAssemblerSupport<Product, ProductModel> {
