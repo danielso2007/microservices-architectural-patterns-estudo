@@ -481,3 +481,7 @@ Consider defining a bean of type 'java.lang.Class' in your configuration.
 2021-01-20 18:59:51 INFO  c.a.e.p.c.ProductRestController - Ending
 2021-01-20 19:00:06 INFO  c.a.e.p.c.ProductRestController - Start
 2021-01-20 19:00:06 INFO  c.a.e.p.c.ProductRestController - Ending
+2021-01-20 19:08:22 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2021-01-20 19:08:22 INFO  io.undertow - stopping server: Undertow - 2.2.3.Final
+2021-01-20 19:08:22 INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-01-20 19:08:22 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

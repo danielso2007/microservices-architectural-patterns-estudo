@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.acme.ecom.product</groupId>
-	<artifactId>Ecom-Product-Microservice</artifactId>
+	<artifactId>Ecom-Product-Server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ecom-product-microservice</name>
-	<description>Demo project for Soring Boot</description>
+	<name>ecom-product-server</name>
+	<description>Product Server</description>
 
 	<properties>
 		<java.version>11</java.version>
