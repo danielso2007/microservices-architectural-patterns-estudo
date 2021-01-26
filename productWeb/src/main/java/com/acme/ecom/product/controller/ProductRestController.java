@@ -3,8 +3,6 @@ package com.acme.ecom.product.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -16,9 +14,7 @@ import com.acme.ecom.hateoas.model.ProductModel;
 import com.acme.ecom.product.feing.ProductServiceProxy;
 import com.acme.ecom.product.feing.service.ProductService;
 
-@EnableFeignClients(basePackageClasses = ProductServiceProxy.class)
-@ComponentScan(basePackageClasses = ProductServiceProxy.class)
-@CrossOrigin
+@CrossOrigin(origins = "*")
 @RestController
 public class ProductRestController implements ProductService{
 
@@ -32,15 +28,17 @@ public class ProductRestController implements ProductService{
     }
 
 
+    @Override
     @GetMapping(value = "/productsweb", produces = {MediaType.APPLICATION_JSON_VALUE})
     public CollectionModel<ProductModel> getAllProducts() {
-        LOGGER.info("Delegating...");
+        LOGGER.info("ProductRestController Delegating...");
         return productServiceProxy.getAllProducts();
     }
 
+    @Override
     @GetMapping(value = "/productsweb/{productId}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ProductModel getProduct(@PathVariable("productId") String productId) {
-        LOGGER.info("Delegating...");
+        LOGGER.info("ProductRestController Delegating...");
         return productServiceProxy.getProduct(productId);
 
     }

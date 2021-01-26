@@ -9,15 +9,37 @@ logging:
       org.springframework.test: INFO
       s7.Application: WARN
 server:
+   port: ${SERVER_PORT:8181}
    compression:
       enabled: true
       min-response-size: 1
-   port: ${SERVER_PORT:8181}
    undertow:
       accesslog:
          dir: logs
          enabled: false
          pattern: '%t %a "%r" %s (%D ms)'
+feign:
+  hystrix:
+    enabled: true
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
+hystrix:
+   shareSecurityContext: true
+   command:
+      default:
+         execution:
+            isolation:
+               thread:
+                  timeoutInMilliseconds: 6000
 spring:
    profiles:
       active: dev

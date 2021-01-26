@@ -17,6 +17,7 @@
 	<packaging>pom</packaging>
 
 	<modules>
+		<module>ProductServerAlternate</module>
 		<module>productServer</module>
 		<module>productWeb</module>
 	</modules>

@@ -9,7 +9,7 @@ logging:
       org.springframework.test: INFO
       s7.Application: WARN
 server:
-   port: ${SERVER_PORT:8180}
+   port: ${SERVER_PORT:8179}
    compression:
       enabled: true
       min-response-size: 1
